@@ -62,6 +62,7 @@ const Container = styled.div`
   width: 364px;
   height: 86px;
   cursor: pointer;
+  box-shadow: 0px 0px 20px 0px #00000012;
 `;
 
 const InformationBox = styled.div`
@@ -100,7 +101,6 @@ const RecentPlaceCard: React.FC<RecentPlaceCardProps> = ({
   Address,
   ImgUrl,
   linkUrl, // 링크 URL
-
 }) => {
   const [placeName, setPlaceName] = useState("null");
   const [subPlaceName, setSubPlaceName] = useState("null");
