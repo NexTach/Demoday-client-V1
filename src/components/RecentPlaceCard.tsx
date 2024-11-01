@@ -48,6 +48,9 @@ const Category = styled.div`
   align-items: center;
   border-radius: 5px;
   background: var(--g-4, #e9e8e7);
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--g-3, #a1a1a1);
 `;
 
 const CategoryWrapper = styled.div`
@@ -56,12 +59,14 @@ const CategoryWrapper = styled.div`
   display: flex;
   align-items: center;
   padding-left: 24px;
+  gap: 8px;
 `;
 
 const Container = styled.div`
   width: 364px;
   height: 86px;
   cursor: pointer;
+  box-shadow: 0px 0px 20px 0px #00000012;
 `;
 
 const InformationBox = styled.div`
@@ -100,7 +105,6 @@ const RecentPlaceCard: React.FC<RecentPlaceCardProps> = ({
   Address,
   ImgUrl,
   linkUrl, // 링크 URL
-
 }) => {
   const [placeName, setPlaceName] = useState("null");
   const [subPlaceName, setSubPlaceName] = useState("null");
